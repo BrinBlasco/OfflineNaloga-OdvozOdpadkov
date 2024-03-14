@@ -1,0 +1,278 @@
+Zacetna voznika 5
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 1, 'time_to_node': 15}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke: 
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Zacetna voznika 9
+Do stranke:
+1 -> {'Node': 1, 'distance_to_node': 2, 'time_to_node': 32}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 2, 'time_to_node': 25}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Zacetna voznika 8
+Do stranke:
+1 -> {'Node': 1, 'distance_to_node': 3, 'time_to_node': 28}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 2, 'time_to_node': 25}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
+
+Do stranke:
+4 -> {'Node': 4, 'distance_to_node': 1, 'time_to_node': 17}
+
+Do smetisca:
+6 -> {'Node': 6, 'distance_to_node': 2, 'time_to_node': 15}
+
+Do stranke:
+2 -> {'Node': 2, 'distance_to_node': 6, 'time_to_node': 19}
+
+Do smetisca:
+3 -> {'Node': 3, 'distance_to_node': 7, 'time_to_node': 13}
