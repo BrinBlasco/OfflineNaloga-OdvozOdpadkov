@@ -1,11 +1,9 @@
 import os
-import time
 import heapq
 import functools
-import numpy as np  # Import NumPy
-from collections import deque
+import numpy as np
 from typing import List, Tuple
-from Utilities.Utilities import pprint, timer #wrote pprint for print formatting json objects/objects
+from Utilities.Utilities import timer
 from Utilities.DataParser import DataProcessor
 from Utilities.Objects import Voznik, Stranka, Odlagalisce
 
