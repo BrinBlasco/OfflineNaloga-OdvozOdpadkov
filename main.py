@@ -5,7 +5,7 @@ import functools
 import numpy as np  # Import NumPy
 from collections import deque
 from typing import List, Tuple
-from other import pprint, timer
+from Utilities import pprint, timer
 from DataParser import DataProcessor
 from Objects import Voznik, Stranka, Odlagalisce
 
