@@ -1,6 +1,6 @@
 import heapq
 
-from DataParser import DataProcessor
+from Utilities.DataParser import DataProcessor
 
 class Graph:
     def __init__(self, distance_matrix, time_matrix):

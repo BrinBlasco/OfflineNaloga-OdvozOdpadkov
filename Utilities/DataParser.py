@@ -65,8 +65,9 @@ class DataProcessor:
             "stranke" : stranke,
             "vozniki" : vozniki
         }
-        
+        # be afraid :)
+        # cuz this can brick some stuff :3
         newOut = path_to_input[:-3].split("/")[1]
-        with open(f"Data/{newOut}.json", "x") as f:
+        with open(f"ProcessedInputs/{newOut}.json", "x") as f:
             json.dump(processed_data, f)
         

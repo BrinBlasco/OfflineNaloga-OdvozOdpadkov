@@ -5,15 +5,15 @@ import functools
 import numpy as np  # Import NumPy
 from collections import deque
 from typing import List, Tuple
-from Utilities import pprint, timer
-from DataParser import DataProcessor
-from Objects import Voznik, Stranka, Odlagalisce
+from Utilities.Utilities import pprint, timer #wrote pprint for print formatting json objects/objects
+from Utilities.DataParser import DataProcessor
+from Utilities.Objects import Voznik, Stranka, Odlagalisce
 
 class Graph:
     def __init__(self, data):
         self.locations = data["L"]
-        self.time_matrix = np.array(data["casovne_razdalje"])  # Convert to NumPy array
-        self.distance_matrix = np.array(data["razdalje"])  # Convert to NumPy array and apply multiplier
+        self.time_matrix = np.array(data["casovne_razdalje"])  
+        self.distance_matrix = np.array(data["razdalje"]) 
 
     def print_graph(self):
         for node in self.nodes.values():
@@ -179,15 +179,12 @@ def voznik_next_sequence(voznik, stranke, smetisca, t_mx, graph):
     return time_spent
     
 @timer
-def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odlagalisce], start_time, end_time, ime) -> None:
+def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odlagalisce], start_time, end_time, output_file_name) -> None:
     
     d_mx = data["razdalje"]
     t_mx = data["casovne_razdalje"]
     
     graph = Graph(data)
-    # graph.add_vozniki(vozniki)
-    # graph.add_stranke(stranke)
-    # graph.add_smetisca(smetisca)
     
     resitev = []
 
@@ -196,12 +193,10 @@ def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odl
     for voznik in vozniki_by_capacity:
         voznik.time = start_time
         
-        if voznik.Ki < 10:
+        if voznik.Ki < 10: #todo prolly unneccessary / fix maybe sometime
             voznik.time = 480
             end_time = 960
             
-        
-        
         if not barrels_left(stranke): break
         
         while (voznik.time + voznik_next_sequence(voznik, stranke, smetisca, t_mx, graph) <= end_time):       #voznik.time < END_TIME:
@@ -223,7 +218,7 @@ def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odl
                     load(voznik, best_stranka)
                     voznik.voznje.append(voznik.voznja.copy())
                 
-            best_smetisce, path_to_best_smetisce = closest_smetisce(voznik, smetisca, graph)
+            _, path_to_best_smetisce = closest_smetisce(voznik, smetisca, graph)
             
             move_through_path(voznik, path_to_best_smetisce, t_mx, graph)
             move_to_location(voznik, path_to_best_smetisce[-1], t_mx)
@@ -240,7 +235,7 @@ def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odl
             resitev.append(" ".join(map(str, list(voznja.values()))))
         
         
-    with open(f"{ime}.txt", "w", encoding="utf-8") as f:
+    with open(f"./Testing/{output_file_name}.txt", "w", encoding="utf-8") as f:
         f.write(f"{428802}\n")
         f.write(f"{data["ime_naloge"]}\n\n")
         f.write(f"{data["stevilka_testa"]}\n")
@@ -256,11 +251,17 @@ def main(data, vozniki: List[Voznik], stranke: List[Stranka], smetisca: List[Odl
 
 if __name__ == "__main__":
     
-    st_naloge = input("St naloge: ")
-    START_TIME = int(input("Start time: "))
-    END_TIME = int(input("End time: "))  
+    st_naloge = input("St naloge: ").strip()
+    data = DataProcessor.loadFile(fr"Inputs\ProcessedInputs\odvoz0{st_naloge}.json")
     
-    data = DataProcessor.loadFile(f"Data/odvoz0{st_naloge}.json")
+    START_TIME = 0
+    END_TIME = 1440
+    
+    try:
+        START_TIME = int(input("Start time: "))
+        END_TIME = int(input("End time: "))  
+    except:
+        print("Reverting to default values for start time and end time. (0, 1440)")
     
     
     Ckm = data["Ckm"]
@@ -270,9 +271,8 @@ if __name__ == "__main__":
     for i, smetisce in enumerate(smetisca_bin, start=1):
         if smetisce == 1: smetisca.append(i)
 
-        
-    vozniki = [Voznik(voznik, Ckm) for voznik in data["vozniki"]]
-    stranke = [Stranka(stranka) for stranka in data["stranke"]]
+    vozniki = [Voznik(voznik, Ckm) for voznik in data["vozniki"]] #init objects
+    stranke = [Stranka(stranka) for stranka in data["stranke"]]  
     smetisca = [Odlagalisce(smetisce) for smetisce in smetisca]
 
 
@@ -282,12 +282,10 @@ if __name__ == "__main__":
     for sID, stranka_fill_ids in enumerate(stranke, start=1):
         stranka_fill_ids.ID = sID
         
-    start_time = START_TIME
-    end_time = END_TIME #1280 => 55.0 
+
+    timer(main(data, vozniki, stranke, smetisca, START_TIME, END_TIME, "output"))
     
-    timer(main(data, vozniki, stranke, smetisca, start_time, end_time, "output"))
-    
-    stream = os.popen(rf".\Rtk24Odvoz.exe eval .\Inputs\odvoz0{data["stevilka_testa"]}.in output.txt report.txt")
+    stream = os.popen(rf".\Testing\Rtk24Odvoz.exe eval .\Inputs\RawInputs\odvoz0{st_naloge}.in .\Testing\output.txt .\Testing\report.txt")
     print(stream.read())
     
 
